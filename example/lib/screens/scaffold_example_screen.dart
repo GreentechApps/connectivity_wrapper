@@ -16,9 +16,9 @@ class _ScaffoldExampleScreenState extends State<ScaffoldExampleScreen> {
   bool _customHeight = false;
   bool _customMessage = false;
 
-  Decoration _decoration;
-  double _height;
-  String _message;
+  Decoration? _decoration;
+  double? _height;
+  String? _message;
 
   @override
   Widget build(BuildContext context) {
@@ -44,6 +44,7 @@ class _ScaffoldExampleScreenState extends State<ScaffoldExampleScreen> {
               title: Text(Strings.customDecoration),
               value: _customDecoration,
               onChanged: (value) {
+                if (value == null) return;
                 setState(() {
                   _customDecoration = value;
                   if (_customDecoration) {
@@ -65,6 +66,7 @@ class _ScaffoldExampleScreenState extends State<ScaffoldExampleScreen> {
               title: Text(Strings.customHeight),
               value: _customHeight,
               onChanged: (value) {
+                if (value == null) return;
                 setState(() {
                   _customHeight = value;
                   if (_customHeight) {
@@ -81,6 +83,7 @@ class _ScaffoldExampleScreenState extends State<ScaffoldExampleScreen> {
               title: Text(Strings.customMessage),
               value: _customMessage,
               onChanged: (value) {
+                if (value == null) return;
                 setState(() {
                   _customMessage = value;
                   if (_customMessage) {
@@ -131,6 +134,7 @@ class _ScaffoldExampleScreenState extends State<ScaffoldExampleScreen> {
               title: Text(Strings.userInteraction),
               value: _disableInteraction,
               onChanged: (value) {
+                if (value == null) return;
                 setState(() {
                   _disableInteraction = value;
                 });

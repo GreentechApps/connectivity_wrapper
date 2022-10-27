@@ -1,6 +1,5 @@
 // Flutter imports:
 import 'package:connectivity_wrapper/src/widgets/connectivity_screen_wrapper.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 /// More info on why default port is 53
