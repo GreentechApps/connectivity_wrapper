@@ -4,52 +4,21 @@ publish_to: none
 version: 0.0.1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+    sdk: ">=2.16.0 <3.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
-  cupertino_icons: ^1.0.2
-  connectivity_wrapper:
-    path: ../
-
+    flutter:
+        sdk: flutter
+    cupertino_icons: ^1.0.2
+    connectivity_wrapper:
+        path: ../
+      
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+    flutter_test:
+        sdk: flutter
 
 flutter:
-  uses-material-design: true
+    uses-material-design: true
 
-  assets:
-    - assets/
-
-  
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    assets:
+        - assets/
